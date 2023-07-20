@@ -1,4 +1,4 @@
-import useMediaQuery from "@/hooks/useMediaQuery";
+
 import { SelectedPage } from "@/shared/types";
 
 import TRANSPARENTMAX from "@/assets/TRANSPARENTMAX.png";
@@ -13,7 +13,6 @@ type Props = {
 
 
 const Home = ({ setSelectedPage }: Props) => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
  
   return (
     <section id="home" className=" bg-gradient-to-r from-slate-300 to-slate-600 gap-16 py-10 md:h-full md:pb-0">
