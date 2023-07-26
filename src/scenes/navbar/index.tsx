@@ -58,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 <div className={`${flexBetween} gap-8`}>
 
                     <a className="rounded-md bg-cyan-500 shadow-lg shadow-cyan-500/50 px-10 py-2 hover:bg-red-500 hover:text-white"
-                      href= "www.songforecast.com"
+                      href= "https://www.songforecast.com/"
                       target="_blank">
                         
                    
