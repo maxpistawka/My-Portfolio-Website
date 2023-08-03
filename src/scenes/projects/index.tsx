@@ -12,21 +12,23 @@ type Props = {
 const projects: Array<ProjectType> = [
   {
     icon: <HomeModernIcon className = "h-6 w-6" />,
-    title: "Cat Shelter App",
+    title: "Song Forecast",
     description:
-      "I have been a cat shelter volunteer for an extended period of years. Therefore I decided to make a program."
+    "Using the Spotify and OpenWeatherMap API's, this website allows you to find the best song for the current weather, in any playlist, in any city." +
+    "To try it out, click the button in the top right of your screen!"
   },
   {
     icon: <UserGroupIcon className = "h-6 w-6" />,
-    title: "Discord Rating Bot",
+    title: "Korean Vocabulary Card System",
     description:
-      "This is a bot that is able to give users a unique experience with..."
+    "Using the SM-2 space repition model, this program optimizes memorization of vocabulary in a card deck setting. " +
+    "Additionally, it showcases the consonant assimilation rules for beginners."
   },
   {
     icon: <AcademicCapIcon className = "h-6 w-6" />,
-    title: "Discord Language Learning Helper",
+    title: "Cat Shelter App",
     description:
-      "I know some of at least 4 languages, and found that a discord bot would be a great way to do this."
+     " This program allows you to store cats  and fosters in your database, with an automatic matching system to find compatible fosters for cats in need of one. "
   },
 ]
 const container = {
@@ -46,7 +48,7 @@ const Projects = ({setSelectedPage}: Props) => {
   >
     {/*HEADER*/}
     <motion.div 
-    className=" md:w-3/5"
+    className=" md:w-4/5"
     initial="hidden"
     whileInView="visible"
     viewport={{ once: true, amount: 0.5 }}
@@ -60,8 +62,8 @@ const Projects = ({setSelectedPage}: Props) => {
         My Projects
 
       </HText>
-      <p className ="my-5 text-sm">
-        I am a second year student at the University of British Columbia, majoring in Computer Science. I have passion for a plethora fields in computer science, involving software engineering, cyber security, and AI. I have proficiency in Java and am currently learning python and typescript (which was used to build this website).
+      <p className ="my-5 text-m">
+        To find out more about my projects, you can find the full length descriptions for each of them on my website! Including what went into making this website.
       </p>
     </motion.div>
     {/*BENEFITS*/}

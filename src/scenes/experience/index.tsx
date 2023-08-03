@@ -14,32 +14,27 @@ import Class from "./Class";
 const classes: Array<ClassType>  = [
     {
         name: "Java Experience",
-        description: "I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
+        description: "I have been actively using Java for 4 years, including writting the entirety of my Cat Shelter Registry program using Java (and using Swing for my GUI).",
         image: javalogo,
     },
     {
         name: "Python Experience",
-        description: "I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
+        description: "I have been actively using Python for the past 2 years, and virtually all of my leetcode questions aswell as my Korean Vocabulary Card App are written in Python.",
         image: pythonlogo,
     },
     {
         name: "React Experience",
-        description: "I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
+        description: "Both this website, aswell as the website for Song Forecast heavily rely on React for the front-end development.",
         image: reactlogo,
     },
     {
         name: "TypeScript Experience",
-        description: "I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
+        description: "I have created both this website, aswell as the website for my Song Forecast Project using TypeScript and my proficiency can be displayed through them.",
         image: tslogo,
     },
     {
-        name: "Relevant Class Experience",
-        description: "I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
-        image: dockerlogo,
-    },
-    {
         name: "Other Experience",
-        description: "Ive also done some quantum stuffI have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year. I have been actively using Java for 3 year.",
+        description: "I have experience in Flask, MySQL, RESTful API access level management design, CSS, HTML, Tailwind, Vite, JSON, and more. ",
         image: otherlogo,
     },
 ]
@@ -74,7 +69,7 @@ const Experience = ({setSelectedPage}: Props) => {
                 </div>
             </motion.div>
             <div className = "mx-14 mt-10 h-[550px]  over overflow-x-auto overflow-y-hidden"> 
-                <ul className = "w-[3020px] whitespace-no-wrap ">
+                <ul className = "w-[2500px] whitespace-no-wrap ">
                     {classes.map((item, index) => (
                         <Class 
                             key = {`$item.name-${index}`}

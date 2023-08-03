@@ -52,8 +52,8 @@ const Home = ({ setSelectedPage }: Props) => {
             </div>
 
             <p className="mt-8 text-m  text-gray-800">
-              I am a second year student at the University of British Columbia, majoring in Computer Science. I have passion for a plethora fields in computer science,
-              involving software engineering, cyber security, and AI. I have proficiency in Java and am currently learning python and typescript.
+              I am a second year student at the University of British Columbia, majoring in Computer Science. I am passionate about a plethora of fields in computer science,
+              primarily software engineering. I have experience in Java, Python, TypeScript, React, Flask, MySQL, Various APIs, and more.
             </p>
           </motion.div>
 
