@@ -5,7 +5,6 @@ import javalogo from "@/assets/javalogo.png";
 import pythonlogo from "@/assets/pythonlogo.png";
 import reactlogo from "@/assets/reactlogo.png";
 import tslogo from "@/assets/tslogo.png";
-import dockerlogo from "@/assets/dockerlogo.png";
 import otherlogo from "@/assets/otherlogo.png";
 import { motion } from 'framer-motion';
 import Class from "./Class";

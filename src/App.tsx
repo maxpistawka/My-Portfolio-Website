@@ -31,9 +31,7 @@ function App() {
           isTopOfPage={isTopOfPage}
           selectedPage={selectedPage}
           setSelectedPage={setSelectedPage}  />
-        
         <Home setSelectedPage={setSelectedPage} />
-        
         <Projects setSelectedPage={setSelectedPage} />
         <Experience setSelectedPage={setSelectedPage} />
         <Footer />
