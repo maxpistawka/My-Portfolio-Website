@@ -7,7 +7,7 @@ import leetcodelogo from "@/assets/leetcodesslogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-200 py-8">
+    <footer className="bg-slate-300 py-6">
       <div className="justify-content mx-auto   w-11/12 gap-32 md:flex">
         <div className = "justify-content mx-auto my-auto w-11/12 md:flex ">
         <div className="mt-16 basis-1/2 md:mt-0 ">

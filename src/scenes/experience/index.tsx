@@ -44,7 +44,7 @@ type Props = {
 
 const Experience = ({setSelectedPage}: Props) => {
   return (
-    <section id="experience" className= "w-full bg-slate-300  py-36">
+    <section id="experience" className= "w-full bg-gradient-to-r from-slate-300 to-slate-600  py-36">
         <motion.div
             onViewportEnter={() => setSelectedPage(SelectedPage.Experience)}
             
@@ -67,7 +67,7 @@ const Experience = ({setSelectedPage}: Props) => {
                     </p>
                 </div>
             </motion.div>
-            <div className = "mx-14 mt-10 h-[550px]  over overflow-x-auto overflow-y-hidden"> 
+            <div className = "mx-14 mt-10 h-[550px] over overflow-x-auto  overflow-y-hidden"> 
                 <ul className = "w-[2500px] whitespace-no-wrap ">
                     {classes.map((item, index) => (
                         <Class 
