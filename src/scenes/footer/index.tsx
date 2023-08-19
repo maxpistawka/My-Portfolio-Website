@@ -1,13 +1,14 @@
 
 import instalogo from "@/assets/instalogo.png";
 import githublogo from "@/assets/githublogo.png";
+
 import facebooklogo from "@/assets/facebooklogo.png";
 import linkedinlogo from "@/assets/linkedinlogo.png";
 import leetcodelogo from "@/assets/leetcodesslogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-300 py-6">
+    <footer className="bg-gradient-to-r  mt-12 from-slate-100 to-slate-400 py-6">
       <div className="justify-content mx-auto   w-11/12 gap-32 md:flex">
         <div className = "justify-content mx-auto my-auto w-11/12 md:flex ">
         <div className="mt-16 basis-1/2 md:mt-0 ">
@@ -30,8 +31,6 @@ const Footer = () => {
         </div>
         <div className="mt-16 basis-1/2 md:mt-0">
             <a target="_blank" href="https://github.com/maxpistawka"><img src={githublogo} className = "h-30 w-20" alt="Five cats looking around a field."/></a>
-         
-        
         </div>
         <div className="mt-16 basis-1/2 md:mt-0">
             <a target="_blank" href="https://leetcode.com/maxpistawka/"><img src={leetcodelogo} className = "h-30 w-20" alt="Five cats looking around a field."/></a>

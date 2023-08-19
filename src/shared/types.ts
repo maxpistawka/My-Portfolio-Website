@@ -3,7 +3,7 @@ export enum SelectedPage {
     AboutMe = "aboutme",
     Experience = "experience",
     Projects = "projects",
-    Contact =  "conctact",
+    Contact =  "contact",
   }
 
   export interface ProjectType {

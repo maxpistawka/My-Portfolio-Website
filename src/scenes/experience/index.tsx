@@ -44,7 +44,7 @@ type Props = {
 
 const Experience = ({setSelectedPage}: Props) => {
   return (
-    <section id="experience" className= "w-full bg-gradient-to-r from-slate-300 to-slate-600  py-36">
+    <section id="experience" className= "w-full bg-white  py-36">
         <motion.div
             onViewportEnter={() => setSelectedPage(SelectedPage.Experience)}
             

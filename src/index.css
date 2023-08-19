@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@700&family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=League+Spartan:wght@400;600;700&family=Montserrat:wght@700&family=Permanent+Marker&family=Rubik&family=Source+Code+Pro&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,8 +11,35 @@ body,
     height: 100%;
     width: 100%;
     font-family: "DM Sans", sans-serif;
-    @apply text-gray-500
+    @apply text-black;
 
+}
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    color: #252423;
+
+}
+@media (prefers-reduced-motion:no-preference) {
+    a,button {
+        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
+        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
+        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
+        transition-timing-function: cubic-bezier(.4,0,.2,1);
+        transition-duration: .15s
+    }
+}
+
+
+.highlighted {  
+    font-weight: 800;  
+    color: white;
+   
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000
 }
 
 ::-webkit-scrollbar {
@@ -33,3 +61,5 @@ body,
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+  

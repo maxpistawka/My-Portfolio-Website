@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
   isTopOfPage: boolean;
@@ -11,16 +11,18 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
+
+
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-slate-300 drop-shadow";
+  const navbarBackground = isTopOfPage ? "" : "bg-gradient-to-r from-slate-100 to-slate-400 drop-shadow";
 
   return (
     <nav>
       <div
-        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6`}
+        className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-8`}
       >
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
@@ -46,25 +48,21 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
-                  <a
-          className=" transition duration-500 hover:text-primary-300"
-      
-      href= "#bottom"
+                 <AnchorLink
+      className= " transition duration-500 hover:text-primary-300"
+      href="$bottom"
+      onClick={() => setSelectedPage(SelectedPage.Contact)}
     > Contact
-    </a>
+    </AnchorLink>
                 </div>
-                
-
-                <div className={`${flexBetween} gap-8`}>
-
-                    <a className="rounded-md  bg-teal-300 shadow-lg shadow-cyan-500/50 px-10 py-2 hover:bg-red-500 hover:text-white"
-                      href= "https://www.songforecast.com/"
-                      target="_blank">
-                        
-                   
-                    Song Forecast</a>
-                    
-                </div>
+                <div>
+                <AnchorLink
+      className= " transition duration-500"
+      href=""
+    > Max Pistawka
+    </AnchorLink>
+                  </div>
+            {/* SONG FORECAST  */}
               </div>
             ) : (
               <button
@@ -106,12 +104,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-           <a
-          className=" transition duration-500 hover:text-primary-300"
-      
-      href= "#bottom"
+           <AnchorLink
+      className= " transition duration-500 hover:text-primary-300"
+      href="$bottom"
+      onClick={() => setSelectedPage(SelectedPage.Contact)}
     > Contact
-    </a>
+    </AnchorLink>
           </div>
         </div>
       )}
