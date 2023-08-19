@@ -41,7 +41,7 @@ const container = {
 
 const Projects = ({setSelectedPage}: Props) => {
   return (
-    <div className = "bg-white">
+    <div>
   <section id="projects" className = " mx-auto min-h-full w-5/6 py-36">
   <motion.div
     onViewportEnter={() => setSelectedPage(SelectedPage.Projects)}

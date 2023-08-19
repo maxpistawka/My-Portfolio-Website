@@ -12,6 +12,7 @@ body,
     width: 100%;
     font-family: "DM Sans", sans-serif;
     @apply text-black;
+    background-color: rgb(247, 247, 247)
 
 }
 p {
@@ -19,15 +20,6 @@ p {
     font-weight: 600;
     color: #252423;
 
-}
-@media (prefers-reduced-motion:no-preference) {
-    a,button {
-        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;
-        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;
-        transition-property: color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;
-        transition-timing-function: cubic-bezier(.4,0,.2,1);
-        transition-duration: .15s
-    }
 }
 
 
