@@ -77,7 +77,7 @@ const Home = ({ setSelectedPage }: Props) => {
           </motion.div>
         </div>
            
-        <div className =" md:px-40 mt-10 pt-20">
+        <div className =" md:px-40 mt-32  ">
         {/* IMAGE */}
         <div className =" md:px-20  flex flex-row justify-between ">
         <div >
@@ -94,26 +94,20 @@ const Home = ({ setSelectedPage }: Props) => {
         </div>
         <hr className = "border-black"></hr>
         {showResults && (
-          <div className = "md:px-20 pt-4">
+          <div className = "md:px-20 pt-4 ">
               <h1>Currently in my second year at UBC majoring in computer science</h1> 
               <h1>Apart of the UBC science Co-op program</h1> 
               <h1>Searching for co-op employment for the 2024 Winter and Summer term</h1> 
               </div>
             )
             }
-            </div>
+             
+           
+        </div>
       </motion.div>
       
         
-      <div
-          className="animate-bounce flex basis-3/5 justify-center mt-40 md:z-10
-                md:justify-items-end"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-8.5-7.5M12 21V3" />
-          </svg>
-
-        </div>
+      
     </section>
   );
 };
